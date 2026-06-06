@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Generated building gallery</title>
+  <desc id="desc">A simple gallery of generated low-poly building variants.</desc>
+  <rect width="900" height="520" fill="#242830"/>
+  <g fill="#3a4048"><rect x="40" y="430" width="820" height="26"/><rect x="70" y="455" width="760" height="18"/></g>
+  <g transform="translate(80 130)">
+    <rect width="150" height="300" fill="#b4aa98"/><rect y="-25" width="150" height="25" fill="#606770"/>
+    <rect x="24" y="35" width="42" height="34" fill="#c9d7dd"/><rect x="92" y="35" width="42" height="34" fill="#2e3740"/>
+    <rect x="24" y="115" width="42" height="34" fill="#c9d7dd"/><rect x="92" y="115" width="42" height="34" fill="#c9d7dd"/>
+    <rect x="24" y="195" width="42" height="34" fill="#2e3740"/><rect x="92" y="195" width="42" height="34" fill="#c9d7dd"/>
+    <rect x="58" y="250" width="38" height="50" fill="#5f3f2f"/>
+  </g>
+  <g transform="translate(295 190)">
+    <rect width="175" height="240" fill="#8f674a"/><rect y="-32" width="175" height="32" fill="#59616b"/>
+    <rect x="18" y="42" width="58" height="42" fill="#c9d7dd"/><rect x="100" y="42" width="58" height="42" fill="#c9d7dd"/>
+    <rect x="18" y="130" width="58" height="42" fill="#2e3740"/><rect x="100" y="130" width="58" height="42" fill="#c9d7dd"/>
+    <rect x="118" y="190" width="40" height="50" fill="#5f3f2f"/>
+  </g>
+  <g transform="translate(540 80)">
+    <rect width="220" height="350" fill="#d7d4cc"/><rect y="-35" width="220" height="35" fill="#646c75"/>
+    <rect x="30" y="42" width="62" height="38" fill="#c9d7dd"/><rect x="128" y="42" width="62" height="38" fill="#c9d7dd"/>
+    <rect x="30" y="126" width="62" height="38" fill="#2e3740"/><rect x="128" y="126" width="62" height="38" fill="#c9d7dd"/>
+    <rect x="30" y="210" width="62" height="38" fill="#c9d7dd"/><rect x="128" y="210" width="62" height="38" fill="#2e3740"/>
+    <rect x="88" y="295" width="48" height="55" fill="#5f3f2f"/>
+  </g>
+</svg>
+

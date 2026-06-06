@@ -1,0 +1,3700 @@
+{
+  "presets": [
+    {
+      "id": "house_small",
+      "label": "House Small",
+      "description": "Baseline compact masonry house for residential control-group rollout",
+      "block_lot_type": "RESIDENTIAL",
+      "defaults": {
+        "width": 7.0,
+        "depth": 5.0,
+        "floor_count": 1,
+        "floor_height": 3.0,
+        "wall_thickness": 0.18,
+        "slab_thickness": 0.15,
+        "parapet_height": 0.0,
+        "stair_core_enabled": false,
+        "stair_placement": "CENTER",
+        "core_width": 1.8,
+        "core_depth": 3.2,
+        "stair_width": 1.2,
+        "step_count": 14,
+        "railing_enabled": false,
+        "door_enabled": false,
+        "door_width": 1.0,
+        "door_height": 2.1,
+        "door_thickness": 0.05,
+        "door_offset_x": -1.4,
+        "door_hinge": "LEFT",
+        "front_stoop_variant": "ROUNDED",
+        "facade_family": "LIGHT_BRICK",
+        "window_profile": "RESIDENTIAL",
+        "entrance_profile": "STOOP_LOW",
+        "balcony_mode": "NONE",
+        "open_window_ratio": 0.32,
+        "combat_open_window_min": 1,
+        "wide_window_ratio": 0.16,
+        "tactical_facade_profile": "TENEMENT",
+        "massing_profile": "BASE_HEAVY",
+        "ground_floor_tactical_profile": "MIXED_WINDOWS",
+        "facade_ac_ratio": 0.1,
+        "roof_prop_profile": "RESIDENTIAL",
+        "stair_window_mode": "NONE",
+        "service_profile": "STANDARD",
+        "unit_mode": "METERS",
+        "export_profile": "EDITABLE_ONLY"
+      },
+      "archetypes": [
+        {
+          "weight": 3.2,
+          "defaults": {
+            "window_profile": "RESIDENTIAL",
+            "entrance_profile": "STOOP_LOW",
+            "balcony_mode": "NONE",
+            "tactical_facade_profile": "TENEMENT",
+            "massing_profile": "BOX",
+            "ground_floor_tactical_profile": "MIXED_WINDOWS",
+            "roof_prop_profile": "RESIDENTIAL",
+            "stair_window_mode": "NONE",
+            "service_profile": "STANDARD"
+          },
+          "ranges": {
+            "facade_family": {
+              "options": [
+                {
+                  "value": "LIGHT_BRICK",
+                  "weight": 4.2
+                },
+                {
+                  "value": "RED_BRICK",
+                  "weight": 2.0
+                },
+                {
+                  "value": "DESAT_BRICK",
+                  "weight": 0.8
+                }
+              ]
+            },
+            "entrance_profile": {
+              "options": [
+                {
+                  "value": "STOOP_LOW",
+                  "weight": 3.8
+                }
+              ]
+            },
+            "balcony_mode": {
+              "options": [
+                {
+                  "value": "NONE",
+                  "weight": 5.0
+                },
+                {
+                  "value": "SHORT",
+                  "weight": 0.35
+                }
+              ]
+            },
+            "tactical_facade_profile": {
+              "options": [
+                {
+                  "value": "TENEMENT",
+                  "weight": 2.4
+                },
+                {
+                  "value": "MIXED_USE",
+                  "weight": 0.5
+                }
+              ]
+            },
+            "massing_profile": {
+              "options": [
+                {
+                  "value": "BOX",
+                  "weight": 2.0
+                },
+                {
+                  "value": "BASE_HEAVY",
+                  "weight": 1.4
+                }
+              ]
+            },
+            "ground_floor_tactical_profile": {
+              "options": [
+                {
+                  "value": "MIXED_WINDOWS",
+                  "weight": 3.6
+                },
+                {
+                  "value": "OPEN_ENTRY",
+                  "weight": 0.35
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.26,
+              0.34
+            ],
+            "wide_window_ratio": [
+              0.1,
+              0.16
+            ],
+            "facade_ac_ratio": [
+              0.04,
+              0.09
+            ]
+          }
+        },
+        {
+          "weight": 0.6,
+          "defaults": {
+            "facade_mode": "UNIFORM_BRICK",
+            "facade_band_profile": "BRICK_REVEAL",
+            "window_profile": "SMALL_SQUARE",
+            "entrance_profile": "STOOP_LOW",
+            "balcony_mode": "NONE",
+            "tactical_facade_profile": "TENEMENT",
+            "massing_profile": "BASE_HEAVY",
+            "ground_floor_tactical_profile": "MIXED_WINDOWS",
+            "roof_prop_profile": "RESIDENTIAL",
+            "stair_window_mode": "NONE",
+            "service_profile": "STANDARD"
+          },
+          "ranges": {
+            "floor_count": [
+              1,
+              1
+            ],
+            "facade_family": {
+              "options": [
+                {
+                  "value": "DESAT_BRICK",
+                  "weight": 1.9
+                },
+                {
+                  "value": "RED_BRICK",
+                  "weight": 1.6
+                },
+                {
+                  "value": "LIGHT_BRICK",
+                  "weight": 0.7
+                }
+              ]
+            },
+            "entrance_profile": {
+              "options": [
+                {
+                  "value": "STOOP_LOW",
+                  "weight": 2.8
+                }
+              ]
+            },
+            "ground_floor_tactical_profile": {
+              "options": [
+                {
+                  "value": "MIXED_WINDOWS",
+                  "weight": 2.6
+                },
+                {
+                  "value": "OPEN_ENTRY",
+                  "weight": 0.4
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.14,
+              0.22
+            ],
+            "wide_window_ratio": [
+              0.03,
+              0.08
+            ],
+            "facade_ac_ratio": [
+              0.01,
+              0.04
+            ]
+          }
+        }
+      ],
+      "ranges": {
+        "width": [
+          6.0,
+          9.0
+        ],
+        "depth": [
+          4.5,
+          7.0
+        ],
+        "floor_count": [
+          1,
+          2
+        ],
+        "door_offset_x": [
+          -1.8,
+          1.8
+        ],
+        "combat_open_window_min": [
+          1,
+          1
+        ],
+        "door_hinge": {
+          "options": [
+            {
+              "value": "LEFT",
+              "weight": 1.0
+            },
+            {
+              "value": "RIGHT",
+              "weight": 1.0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "house_wide",
+      "label": "House Wide",
+      "description": "Baseline wide masonry house for residential control-group rollout",
+      "block_lot_type": "RESIDENTIAL",
+      "defaults": {
+        "width": 11.0,
+        "depth": 6.5,
+        "floor_count": 1,
+        "floor_height": 3.0,
+        "wall_thickness": 0.18,
+        "slab_thickness": 0.15,
+        "parapet_height": 0.0,
+        "stair_core_enabled": false,
+        "stair_placement": "CENTER",
+        "core_width": 1.8,
+        "core_depth": 3.4,
+        "stair_width": 1.2,
+        "step_count": 14,
+        "railing_enabled": false,
+        "door_enabled": true,
+        "door_width": 1.05,
+        "door_height": 2.1,
+        "door_thickness": 0.05,
+        "door_offset_x": -2.4,
+        "door_hinge": "LEFT",
+        "front_stoop_variant": "ROUNDED",
+        "facade_family": "LIGHT_BRICK",
+        "window_profile": "RESIDENTIAL_WIDE",
+        "entrance_profile": "STOOP_LOW",
+        "balcony_mode": "NONE",
+        "open_window_ratio": 0.28,
+        "combat_open_window_min": 1,
+        "wide_window_ratio": 0.24,
+        "tactical_facade_profile": "TENEMENT",
+        "massing_profile": "BASE_HEAVY",
+        "ground_floor_tactical_profile": "MIXED_WINDOWS",
+        "facade_ac_ratio": 0.07,
+        "roof_prop_profile": "RESIDENTIAL",
+        "stair_window_mode": "NONE",
+        "service_profile": "STANDARD",
+        "unit_mode": "METERS",
+        "export_profile": "EDITABLE_ONLY"
+      },
+      "archetypes": [
+        {
+          "weight": 2.4,
+          "defaults": {
+            "window_profile": "RESIDENTIAL_WIDE",
+            "entrance_profile": "STOOP_LOW",
+            "balcony_mode": "NONE",
+            "tactical_facade_profile": "TENEMENT",
+            "massing_profile": "BOX",
+            "ground_floor_tactical_profile": "MIXED_WINDOWS",
+            "roof_prop_profile": "RESIDENTIAL",
+            "stair_window_mode": "NONE",
+            "service_profile": "STANDARD"
+          },
+          "ranges": {
+            "facade_family": {
+              "options": [
+                {
+                  "value": "LIGHT_BRICK",
+                  "weight": 3.6
+                },
+                {
+                  "value": "RED_BRICK",
+                  "weight": 1.7
+                },
+                {
+                  "value": "DESAT_BRICK",
+                  "weight": 0.9
+                }
+              ]
+            },
+            "balcony_mode": {
+              "options": [
+                {
+                  "value": "NONE",
+                  "weight": 4.3
+                },
+                {
+                  "value": "SHORT",
+                  "weight": 0.35
+                }
+              ]
+            },
+            "massing_profile": {
+              "options": [
+                {
+                  "value": "BOX",
+                  "weight": 2.2
+                },
+                {
+                  "value": "BASE_HEAVY",
+                  "weight": 1.2
+                }
+              ]
+            },
+            "ground_floor_tactical_profile": {
+              "options": [
+                {
+                  "value": "MIXED_WINDOWS",
+                  "weight": 3.1
+                },
+                {
+                  "value": "OPEN_ENTRY",
+                  "weight": 0.5
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.22,
+              0.32
+            ],
+            "wide_window_ratio": [
+              0.2,
+              0.3
+            ],
+            "facade_ac_ratio": [
+              0.02,
+              0.06
+            ]
+          }
+        }
+      ],
+      "ranges": {
+        "width": [
+          9.5,
+          14.0
+        ],
+        "depth": [
+          6.0,
+          9.0
+        ],
+        "floor_count": [
+          1,
+          2
+        ],
+        "door_offset_x": [
+          -2.8,
+          2.8
+        ],
+        "combat_open_window_min": [
+          1,
+          1
+        ],
+        "door_hinge": {
+          "options": [
+            {
+              "value": "LEFT",
+              "weight": 1.0
+            },
+            {
+              "value": "RIGHT",
+              "weight": 1.0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "wood_house",
+      "label": "Wood House",
+      "description": "Proof-locked corrective preset for the wood-house family; single-building only until timber roof/frontage proof and representative block smoke are green",
+      "defaults": {
+        "width": 8.2,
+        "depth": 6.2,
+        "floor_count": 2,
+        "floor_height": 3.0,
+        "wall_thickness": 0.18,
+        "slab_thickness": 0.15,
+        "parapet_height": 0.0,
+        "stair_core_enabled": false,
+        "stair_placement": "CENTER",
+        "core_width": 1.8,
+        "core_depth": 3.2,
+        "stair_width": 1.2,
+        "step_count": 14,
+        "railing_enabled": false,
+        "door_enabled": true,
+        "door_width": 1.05,
+        "door_height": 2.1,
+        "door_thickness": 0.05,
+        "door_offset_x": -1.6,
+        "door_hinge": "LEFT",
+        "front_stoop_variant": "ROUNDED",
+        "facade_family": "TIMBER_WARM",
+        "facade_mode": "UNIFORM_FLAT",
+        "facade_band_profile": "TRIM_DEFAULT",
+        "window_profile": "RESIDENTIAL",
+        "entrance_profile": "STOOP_LOW",
+        "balcony_mode": "NONE",
+        "open_window_ratio": 0.5,
+        "combat_open_window_min": 2,
+        "wide_window_ratio": 0.14,
+        "tactical_facade_profile": "TENEMENT",
+        "massing_profile": "BOX",
+        "ground_floor_tactical_profile": "MIXED_WINDOWS",
+        "foundation_profile": "STONE_BASE",
+        "facade_ac_ratio": 0.02,
+        "door_profile": "HINGED",
+        "roof_mode": "GABLE",
+        "roof_prop_profile": "NONE",
+        "stair_window_mode": "NONE",
+        "service_profile": "STANDARD",
+        "facade_completion": 1.0,
+        "unit_mode": "METERS",
+        "export_profile": "EDITABLE_ONLY"
+      },
+      "archetypes": [
+        {
+          "weight": 2.4,
+          "defaults": {
+            "facade_mode": "UNIFORM_FLAT",
+            "facade_band_profile": "TRIM_DEFAULT",
+            "window_profile": "RESIDENTIAL",
+            "entrance_profile": "STOOP_LOW",
+            "balcony_mode": "NONE",
+            "tactical_facade_profile": "TENEMENT",
+            "massing_profile": "BOX",
+            "ground_floor_tactical_profile": "MIXED_WINDOWS",
+            "foundation_profile": "STONE_BASE",
+            "door_profile": "HINGED",
+            "roof_mode": "GABLE",
+            "roof_prop_profile": "NONE",
+            "stair_window_mode": "NONE",
+            "service_profile": "STANDARD",
+            "facade_completion": 1.0
+          },
+          "ranges": {
+            "facade_family": {
+              "options": [
+                {
+                  "value": "TIMBER_WARM",
+                  "weight": 2.5
+                },
+                {
+                  "value": "PAINTED_WOOD",
+                  "weight": 1.4
+                },
+                {
+                  "value": "TIMBER_WEATHERED",
+                  "weight": 0.9
+                }
+              ]
+            },
+            "facade_band_profile": {
+              "options": [
+                {
+                  "value": "TRIM_DEFAULT",
+                  "weight": 2.0
+                },
+                {
+                  "value": "NONE",
+                  "weight": 0.9
+                }
+              ]
+            },
+            "foundation_profile": {
+              "options": [
+                {
+                  "value": "STONE_BASE",
+                  "weight": 2.0
+                },
+                {
+                  "value": "PLAIN",
+                  "weight": 1.0
+                }
+              ]
+            },
+            "ground_floor_tactical_profile": {
+              "options": [
+                {
+                  "value": "MIXED_WINDOWS",
+                  "weight": 2.6
+                },
+                {
+                  "value": "OPEN_ENTRY",
+                  "weight": 0.45
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.44,
+              0.6
+            ],
+            "wide_window_ratio": [
+              0.12,
+              0.18
+            ],
+            "facade_ac_ratio": [
+              0.0,
+              0.03
+            ]
+          }
+        }
+      ],
+      "ranges": {
+        "width": [
+          7.0,
+          9.8
+        ],
+        "depth": [
+          5.2,
+          7.4
+        ],
+        "floor_count": [
+          1,
+          2
+        ],
+        "door_offset_x": [
+          -2.0,
+          2.0
+        ],
+        "combat_open_window_min": [
+          2,
+          2
+        ],
+        "door_hinge": {
+          "options": [
+            {
+              "value": "LEFT",
+              "weight": 1.0
+            },
+            {
+              "value": "RIGHT",
+              "weight": 1.0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "wood_rowhouse",
+      "label": "Wood Rowhouse",
+      "description": "Proof-locked corrective preset for the wood-rowhouse family; single-building only until timber roof/frontage proof and representative block smoke are green",
+      "defaults": {
+        "width": 7.6,
+        "depth": 7.2,
+        "floor_count": 3,
+        "floor_height": 3.0,
+        "wall_thickness": 0.2,
+        "slab_thickness": 0.15,
+        "parapet_height": 0.0,
+        "stair_core_enabled": true,
+        "stair_placement": "BACK_RIGHT",
+        "core_width": 2.0,
+        "core_depth": 4.0,
+        "stair_width": 1.6,
+        "step_count": 16,
+        "railing_enabled": false,
+        "door_enabled": true,
+        "door_width": 1.1,
+        "door_height": 2.2,
+        "door_thickness": 0.06,
+        "door_offset_x": -1.4,
+        "door_hinge": "LEFT",
+        "front_stoop_variant": "ROUNDED",
+        "facade_family": "PAINTED_WOOD",
+        "facade_mode": "UNIFORM_FLAT",
+        "facade_band_profile": "TRIM_DEFAULT",
+        "window_profile": "TALL_NARROW",
+        "entrance_profile": "STOOP_LOW",
+        "balcony_mode": "NONE",
+        "open_window_ratio": 0.48,
+        "combat_open_window_min": 3,
+        "wide_window_ratio": 0.08,
+        "tactical_facade_profile": "TENEMENT",
+        "massing_profile": "BOX",
+        "ground_floor_tactical_profile": "MIXED_WINDOWS",
+        "foundation_profile": "STONE_BASE",
+        "facade_ac_ratio": 0.02,
+        "door_profile": "HINGED",
+        "roof_mode": "GABLE",
+        "roof_prop_profile": "NONE",
+        "stair_window_mode": "EXPOSED",
+        "service_profile": "STANDARD",
+        "facade_completion": 1.0,
+        "unit_mode": "METERS",
+        "export_profile": "EDITABLE_ONLY"
+      },
+      "archetypes": [
+        {
+          "weight": 2.1,
+          "defaults": {
+            "facade_mode": "UNIFORM_FLAT",
+            "facade_band_profile": "TRIM_DEFAULT",
+            "window_profile": "TALL_NARROW",
+            "entrance_profile": "STOOP_LOW",
+            "balcony_mode": "NONE",
+            "tactical_facade_profile": "TENEMENT",
+            "massing_profile": "BOX",
+            "ground_floor_tactical_profile": "MIXED_WINDOWS",
+            "foundation_profile": "STONE_BASE",
+            "door_profile": "HINGED",
+            "roof_mode": "GABLE",
+            "roof_prop_profile": "NONE",
+            "stair_window_mode": "EXPOSED",
+            "service_profile": "STANDARD",
+            "facade_completion": 1.0
+          },
+          "ranges": {
+            "floor_count": [
+              2,
+              3
+            ],
+            "facade_family": {
+              "options": [
+                {
+                  "value": "PAINTED_WOOD",
+                  "weight": 1.9
+                },
+                {
+                  "value": "TIMBER_WARM",
+                  "weight": 1.5
+                },
+                {
+                  "value": "TIMBER_WEATHERED",
+                  "weight": 0.8
+                }
+              ]
+            },
+            "stair_placement": {
+              "options": [
+                {
+                  "value": "BACK_RIGHT",
+                  "weight": 2.1
+                },
+                {
+                  "value": "BACK_LEFT",
+                  "weight": 2.1
+                },
+                {
+                  "value": "FRONT_RIGHT",
+                  "weight": 0.5
+                }
+              ]
+            },
+            "facade_band_profile": {
+              "options": [
+                {
+                  "value": "TRIM_DEFAULT",
+                  "weight": 2.1
+                },
+                {
+                  "value": "HEAVY_CORNICE",
+                  "weight": 0.9
+                },
+                {
+                  "value": "NONE",
+                  "weight": 0.4
+                }
+              ]
+            },
+            "foundation_profile": {
+              "options": [
+                {
+                  "value": "STONE_BASE",
+                  "weight": 1.9
+                },
+                {
+                  "value": "HEAVY_BASE",
+                  "weight": 1.0
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.42,
+              0.58
+            ],
+            "wide_window_ratio": [
+              0.06,
+              0.1
+            ],
+            "facade_ac_ratio": [
+              0.01,
+              0.04
+            ]
+          }
+        }
+      ],
+      "ranges": {
+        "width": [
+          7.0,
+          8.8
+        ],
+        "depth": [
+          6.8,
+          8.4
+        ],
+        "floor_count": [
+          2,
+          4
+        ],
+        "stair_placement": {
+          "options": [
+            {
+              "value": "BACK_RIGHT",
+              "weight": 2.0
+            },
+            {
+              "value": "BACK_LEFT",
+              "weight": 2.0
+            },
+            {
+              "value": "FRONT_RIGHT",
+              "weight": 0.5
+            }
+          ]
+        },
+        "door_offset_x": [
+          -1.6,
+          1.6
+        ],
+        "combat_open_window_min": [
+          2,
+          3
+        ],
+        "door_hinge": {
+          "options": [
+            {
+              "value": "LEFT",
+              "weight": 1.0
+            },
+            {
+              "value": "RIGHT",
+              "weight": 0.7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "townhouse",
+      "label": "Townhouse",
+      "description": "Baseline masonry townhouse for residential control-group rollout",
+      "block_lot_type": "RESIDENTIAL",
+      "defaults": {
+        "width": 8.4,
+        "depth": 7.4,
+        "floor_count": 3,
+        "floor_height": 3.0,
+        "wall_thickness": 0.2,
+        "slab_thickness": 0.15,
+        "parapet_height": 0.55,
+        "stair_core_enabled": true,
+        "stair_placement": "BACK_RIGHT",
+        "core_width": 2.0,
+        "core_depth": 4.0,
+        "stair_width": 1.6,
+        "step_count": 16,
+        "railing_enabled": false,
+        "door_enabled": true,
+        "door_width": 1.2,
+        "door_height": 2.2,
+        "door_thickness": 0.06,
+        "door_offset_x": -1.7,
+        "door_hinge": "LEFT",
+        "front_stoop_variant": "ROUNDED",
+        "facade_family": "DESAT_BRICK",
+        "window_profile": "TALL_NARROW",
+        "entrance_profile": "STOOP_LOW",
+        "balcony_mode": "NONE",
+        "open_window_ratio": 0.22,
+        "combat_open_window_min": 1,
+        "wide_window_ratio": 0.08,
+        "tactical_facade_profile": "TENEMENT",
+        "massing_profile": "BASE_HEAVY",
+        "ground_floor_tactical_profile": "MIXED_WINDOWS",
+        "facade_ac_ratio": 0.05,
+        "roof_prop_profile": "RESIDENTIAL",
+        "stair_window_mode": "EXPOSED",
+        "service_profile": "NONE",
+        "unit_mode": "METERS",
+        "export_profile": "EDITABLE_ONLY"
+      },
+      "archetypes": [
+        {
+          "weight": 2.4,
+          "defaults": {
+            "window_profile": "TALL_NARROW",
+            "entrance_profile": "STOOP_LOW",
+            "balcony_mode": "NONE",
+            "tactical_facade_profile": "TENEMENT",
+            "massing_profile": "BOX",
+            "ground_floor_tactical_profile": "MIXED_WINDOWS",
+            "roof_prop_profile": "RESIDENTIAL",
+            "stair_window_mode": "EXPOSED",
+            "service_profile": "STANDARD"
+          },
+          "ranges": {
+            "facade_family": {
+              "options": [
+                {
+                  "value": "DESAT_BRICK",
+                  "weight": 2.4
+                },
+                {
+                  "value": "LIGHT_BRICK",
+                  "weight": 1.4
+                },
+                {
+                  "value": "RED_BRICK",
+                  "weight": 1.0
+                }
+              ]
+            },
+            "stair_placement": {
+              "options": [
+                {
+                  "value": "BACK_RIGHT",
+                  "weight": 2.2
+                },
+                {
+                  "value": "BACK_LEFT",
+                  "weight": 2.2
+                },
+                {
+                  "value": "FRONT_RIGHT",
+                  "weight": 0.7
+                }
+              ]
+            },
+            "massing_profile": {
+              "options": [
+                {
+                  "value": "BOX",
+                  "weight": 2.4
+                },
+                {
+                  "value": "BASE_HEAVY",
+                  "weight": 1.0
+                }
+              ]
+            },
+            "ground_floor_tactical_profile": {
+              "options": [
+                {
+                  "value": "MIXED_WINDOWS",
+                  "weight": 2.3
+                },
+                {
+                  "value": "OPEN_ENTRY",
+                  "weight": 0.55
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.18,
+              0.28
+            ],
+            "wide_window_ratio": [
+              0.04,
+              0.1
+            ],
+            "facade_ac_ratio": [
+              0.02,
+              0.05
+            ]
+          }
+        },
+        {
+          "weight": 0.92,
+          "defaults": {
+            "facade_mode": "UNIFORM_BRICK",
+            "facade_band_profile": "BRICK_REVEAL",
+            "window_profile": "MULTI_PANE",
+            "entrance_profile": "STOOP_LOW",
+            "balcony_mode": "NONE",
+            "tactical_facade_profile": "TENEMENT",
+            "massing_profile": "BASE_HEAVY",
+            "ground_floor_tactical_profile": "MIXED_WINDOWS",
+            "roof_prop_profile": "RESIDENTIAL",
+            "stair_window_mode": "EXPOSED",
+            "service_profile": "STANDARD"
+          },
+          "ranges": {
+            "floor_count": [
+              2,
+              3
+            ],
+            "facade_family": {
+              "options": [
+                {
+                  "value": "DESAT_BRICK",
+                  "weight": 2.0
+                },
+                {
+                  "value": "RED_BRICK",
+                  "weight": 1.5
+                },
+                {
+                  "value": "LIGHT_BRICK",
+                  "weight": 0.8
+                }
+              ]
+            },
+            "stair_placement": {
+              "options": [
+                {
+                  "value": "BACK_RIGHT",
+                  "weight": 2.0
+                },
+                {
+                  "value": "BACK_LEFT",
+                  "weight": 1.7
+                },
+                {
+                  "value": "FRONT_RIGHT",
+                  "weight": 0.5
+                }
+              ]
+            },
+            "ground_floor_tactical_profile": {
+              "options": [
+                {
+                  "value": "MIXED_WINDOWS",
+                  "weight": 2.1
+                },
+                {
+                  "value": "OPEN_ENTRY",
+                  "weight": 0.5
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.16,
+              0.24
+            ],
+            "wide_window_ratio": [
+              0.04,
+              0.09
+            ],
+            "facade_ac_ratio": [
+              0.02,
+              0.04
+            ]
+          }
+        }
+      ],
+      "ranges": {
+        "width": [
+          7.8,
+          9.6
+        ],
+        "depth": [
+          6.8,
+          8.8
+        ],
+        "floor_count": [
+          2,
+          4
+        ],
+        "stair_placement": {
+          "options": [
+            {
+              "value": "BACK_RIGHT",
+              "weight": 2.1
+            },
+            {
+              "value": "BACK_LEFT",
+              "weight": 2.1
+            },
+            {
+              "value": "FRONT_RIGHT",
+              "weight": 0.7
+            }
+          ]
+        },
+        "door_offset_x": [
+          -1.8,
+          1.8
+        ],
+        "combat_open_window_min": [
+          1,
+          2
+        ],
+        "door_hinge": {
+          "options": [
+            {
+              "value": "LEFT",
+              "weight": 1.0
+            },
+            {
+              "value": "RIGHT",
+              "weight": 0.7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "apartment_lowrise",
+      "label": "Apartment Lowrise",
+      "description": "Baseline low-rise masonry apartment for residential control-group rollout",
+      "block_lot_type": "RESIDENTIAL",
+      "defaults": {
+        "width": 9.5,
+        "depth": 7.5,
+        "floor_count": 3,
+        "floor_height": 3.0,
+        "wall_thickness": 0.2,
+        "slab_thickness": 0.15,
+        "parapet_height": 0.65,
+        "stair_core_enabled": true,
+        "stair_placement": "BACK_RIGHT",
+        "core_width": 2.0,
+        "core_depth": 4.0,
+        "stair_width": 1.8,
+        "step_count": 16,
+        "railing_enabled": false,
+        "door_enabled": true,
+        "door_width": 1.2,
+        "door_height": 2.2,
+        "door_thickness": 0.06,
+        "door_offset_x": -1.8,
+        "door_hinge": "LEFT",
+        "front_stoop_variant": "ROUNDED",
+        "facade_family": "LIGHT_BRICK",
+        "window_profile": "RESIDENTIAL_WIDE",
+        "entrance_profile": "PODIUM_HIGH",
+        "balcony_mode": "SHORT",
+        "open_window_ratio": 0.29,
+        "combat_open_window_min": 2,
+        "wide_window_ratio": 0.18,
+        "tactical_facade_profile": "PANEL",
+        "massing_profile": "BASE_HEAVY",
+        "ground_floor_tactical_profile": "DEFENSIVE_BASE",
+        "facade_ac_ratio": 0.08,
+        "roof_prop_profile": "RESIDENTIAL",
+        "stair_window_mode": "EXPOSED",
+        "service_profile": "STANDARD",
+        "unit_mode": "METERS",
+        "export_profile": "EDITABLE_ONLY"
+      },
+      "archetypes": [
+        {
+          "weight": 2.3,
+          "defaults": {
+            "window_profile": "RESIDENTIAL_WIDE",
+            "entrance_profile": "PODIUM_HIGH",
+            "balcony_mode": "SHORT",
+            "tactical_facade_profile": "PANEL",
+            "massing_profile": "BASE_HEAVY",
+            "ground_floor_tactical_profile": "DEFENSIVE_BASE",
+            "roof_prop_profile": "RESIDENTIAL",
+            "stair_window_mode": "EXPOSED",
+            "service_profile": "STANDARD"
+          },
+          "ranges": {
+            "facade_family": {
+              "options": [
+                {
+                  "value": "LIGHT_BRICK",
+                  "weight": 3.0
+                },
+                {
+                  "value": "DESAT_BRICK",
+                  "weight": 1.4
+                },
+                {
+                  "value": "RED_BRICK",
+                  "weight": 1.0
+                }
+              ]
+            },
+            "stair_placement": {
+              "options": [
+                {
+                  "value": "BACK_RIGHT",
+                  "weight": 2.1
+                },
+                {
+                  "value": "BACK_LEFT",
+                  "weight": 2.1
+                },
+                {
+                  "value": "FRONT_RIGHT",
+                  "weight": 0.8
+                }
+              ]
+            },
+            "balcony_mode": {
+              "options": [
+                {
+                  "value": "SHORT",
+                  "weight": 2.5
+                },
+                {
+                  "value": "NONE",
+                  "weight": 0.6
+                },
+                {
+                  "value": "STRIP",
+                  "weight": 0.7
+                }
+              ]
+            },
+            "ground_floor_tactical_profile": {
+              "options": [
+                {
+                  "value": "DEFENSIVE_BASE",
+                  "weight": 2.0
+                },
+                {
+                  "value": "MIXED_WINDOWS",
+                  "weight": 0.7
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.24,
+              0.33
+            ],
+            "wide_window_ratio": [
+              0.14,
+              0.22
+            ],
+            "facade_ac_ratio": [
+              0.04,
+              0.09
+            ]
+          }
+        },
+        {
+          "weight": 1.25,
+          "defaults": {
+            "window_profile": "RESIDENTIAL",
+            "entrance_profile": "PODIUM_HIGH",
+            "balcony_mode": "NONE",
+            "tactical_facade_profile": "STAIR_CORE",
+            "massing_profile": "BOX",
+            "ground_floor_tactical_profile": "OPEN_ENTRY",
+            "roof_prop_profile": "RESIDENTIAL",
+            "stair_window_mode": "EXPOSED",
+            "service_profile": "STANDARD"
+          },
+          "ranges": {
+            "floor_count": [
+              2,
+              3
+            ],
+            "facade_family": {
+              "options": [
+                {
+                  "value": "LIGHT_BRICK",
+                  "weight": 2.5
+                },
+                {
+                  "value": "DESAT_BRICK",
+                  "weight": 1.7
+                },
+                {
+                  "value": "RED_BRICK",
+                  "weight": 0.8
+                }
+              ]
+            },
+            "stair_placement": {
+              "options": [
+                {
+                  "value": "BACK_RIGHT",
+                  "weight": 2.0
+                },
+                {
+                  "value": "BACK_LEFT",
+                  "weight": 2.0
+                },
+                {
+                  "value": "FRONT_RIGHT",
+                  "weight": 0.8
+                }
+              ]
+            },
+            "massing_profile": {
+              "options": [
+                {
+                  "value": "BOX",
+                  "weight": 2.1
+                },
+                {
+                  "value": "BASE_HEAVY",
+                  "weight": 1.0
+                }
+              ]
+            },
+            "ground_floor_tactical_profile": {
+              "options": [
+                {
+                  "value": "OPEN_ENTRY",
+                  "weight": 2.0
+                },
+                {
+                  "value": "DEFENSIVE_BASE",
+                  "weight": 0.9
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.22,
+              0.3
+            ],
+            "wide_window_ratio": [
+              0.1,
+              0.18
+            ],
+            "facade_ac_ratio": [
+              0.04,
+              0.08
+            ]
+          }
+        }
+      ],
+      "ranges": {
+        "width": [
+          8.6,
+          13.0
+        ],
+        "depth": [
+          6.8,
+          9.8
+        ],
+        "floor_count": [
+          2,
+          4
+        ],
+        "stair_placement": {
+          "options": [
+            {
+              "value": "BACK_RIGHT",
+              "weight": 2.0
+            },
+            {
+              "value": "BACK_LEFT",
+              "weight": 2.0
+            },
+            {
+              "value": "FRONT_RIGHT",
+              "weight": 0.8
+            }
+          ]
+        },
+        "railing_enabled": {
+          "options": [
+            {
+              "value": true,
+              "weight": 0.9
+            },
+            {
+              "value": false,
+              "weight": 2.0
+            }
+          ]
+        },
+        "door_offset_x": [
+          -2.4,
+          2.4
+        ],
+        "combat_open_window_min": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "id": "motel",
+      "label": "Motel",
+      "description": "Manual-only deferred preset for the motel family; requires gallery-circulation and repeated-door authoring not yet in the pipeline",
+      "defaults": {
+        "width": 12.2,
+        "depth": 8.2,
+        "floor_count": 3,
+        "floor_height": 3.0,
+        "wall_thickness": 0.2,
+        "slab_thickness": 0.15,
+        "parapet_height": 0.75,
+        "stair_core_enabled": true,
+        "stair_placement": "BACK_RIGHT",
+        "core_width": 2.2,
+        "core_depth": 4.0,
+        "stair_width": 1.8,
+        "step_count": 16,
+        "railing_enabled": true,
+        "door_enabled": true,
+        "door_width": 1.3,
+        "door_height": 2.2,
+        "door_thickness": 0.06,
+        "door_offset_x": -2.0,
+        "door_hinge": "LEFT",
+        "facade_family": "LIGHT_BRICK",
+        "window_profile": "RESIDENTIAL_WIDE",
+        "entrance_profile": "FLUSH",
+        "balcony_mode": "STRIP",
+        "open_window_ratio": 0.26,
+        "combat_open_window_min": 2,
+        "wide_window_ratio": 0.22,
+        "tactical_facade_profile": "PANEL",
+        "massing_profile": "TOP_SETBACK",
+        "ground_floor_tactical_profile": "OPEN_ENTRY",
+        "facade_ac_ratio": 0.05,
+        "roof_mode": "SHED",
+        "roof_prop_profile": "NONE",
+        "stair_window_mode": "EXPOSED",
+        "service_profile": "STANDARD",
+        "unit_mode": "METERS",
+        "export_profile": "EDITABLE_ONLY"
+      },
+      "archetypes": [
+        {
+          "weight": 2.2,
+          "defaults": {
+            "window_profile": "RESIDENTIAL_WIDE",
+            "entrance_profile": "FLUSH",
+            "balcony_mode": "STRIP",
+            "tactical_facade_profile": "PANEL",
+            "massing_profile": "TOP_SETBACK",
+            "ground_floor_tactical_profile": "OPEN_ENTRY",
+            "roof_mode": "SHED",
+            "roof_prop_profile": "NONE",
+            "stair_window_mode": "EXPOSED",
+            "service_profile": "STANDARD"
+          },
+          "ranges": {
+            "width": [
+              11.0,
+              14.4
+            ],
+            "depth": [
+              7.2,
+              9.2
+            ],
+            "floor_count": [
+              2,
+              3
+            ],
+            "facade_family": {
+              "options": [
+                {
+                  "value": "LIGHT_BRICK",
+                  "weight": 2.6
+                },
+                {
+                  "value": "DESAT_BRICK",
+                  "weight": 1.5
+                },
+                {
+                  "value": "RED_BRICK",
+                  "weight": 0.8
+                }
+              ]
+            },
+            "stair_placement": {
+              "options": [
+                {
+                  "value": "BACK_RIGHT",
+                  "weight": 2.0
+                },
+                {
+                  "value": "BACK_LEFT",
+                  "weight": 2.0
+                },
+                {
+                  "value": "FRONT_RIGHT",
+                  "weight": 0.6
+                }
+              ]
+            },
+            "balcony_mode": {
+              "options": [
+                {
+                  "value": "STRIP",
+                  "weight": 3.2
+                },
+                {
+                  "value": "SHORT",
+                  "weight": 0.7
+                },
+                {
+                  "value": "NONE",
+                  "weight": 0.15
+                }
+              ]
+            },
+            "massing_profile": {
+              "options": [
+                {
+                  "value": "TOP_SETBACK",
+                  "weight": 2.8
+                },
+                {
+                  "value": "BASE_HEAVY",
+                  "weight": 0.5
+                }
+              ]
+            },
+            "roof_mode": {
+              "options": [
+                {
+                  "value": "SHED",
+                  "weight": 2.4
+                },
+                {
+                  "value": "FLAT",
+                  "weight": 1.1
+                }
+              ]
+            },
+            "ground_floor_tactical_profile": {
+              "options": [
+                {
+                  "value": "OPEN_ENTRY",
+                  "weight": 2.1
+                },
+                {
+                  "value": "MIXED_WINDOWS",
+                  "weight": 0.7
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.23,
+              0.3
+            ],
+            "wide_window_ratio": [
+              0.18,
+              0.28
+            ],
+            "facade_ac_ratio": [
+              0.03,
+              0.07
+            ]
+          }
+        }
+      ],
+      "ranges": {
+        "width": [
+          10.0,
+          15.5
+        ],
+        "depth": [
+          7.0,
+          10.2
+        ],
+        "floor_count": [
+          2,
+          4
+        ],
+        "stair_placement": {
+          "options": [
+            {
+              "value": "BACK_RIGHT",
+              "weight": 2.0
+            },
+            {
+              "value": "BACK_LEFT",
+              "weight": 2.0
+            },
+            {
+              "value": "FRONT_RIGHT",
+              "weight": 0.6
+            }
+          ]
+        },
+        "railing_enabled": {
+          "options": [
+            {
+              "value": true,
+              "weight": 1.4
+            },
+            {
+              "value": false,
+              "weight": 1.0
+            }
+          ]
+        },
+        "door_offset_x": [
+          -2.8,
+          2.8
+        ],
+        "combat_open_window_min": [
+          2,
+          2
+        ],
+        "door_hinge": {
+          "options": [
+            {
+              "value": "LEFT",
+              "weight": 1.0
+            },
+            {
+              "value": "RIGHT",
+              "weight": 0.7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "apartment_midrise",
+      "label": "Apartment Midrise",
+      "description": "Baseline mid-rise masonry apartment for residential control-group rollout",
+      "block_lot_type": "RESIDENTIAL",
+      "defaults": {
+        "width": 8.0,
+        "depth": 6.0,
+        "floor_count": 3,
+        "floor_height": 3.0,
+        "wall_thickness": 0.2,
+        "slab_thickness": 0.15,
+        "parapet_height": 0.8,
+        "stair_core_enabled": true,
+        "stair_placement": "FRONT_RIGHT",
+        "core_width": 2.0,
+        "core_depth": 3.8,
+        "stair_width": 1.8,
+        "step_count": 16,
+        "railing_enabled": false,
+        "door_enabled": true,
+        "door_width": 1.2,
+        "door_height": 2.2,
+        "door_thickness": 0.06,
+        "door_offset_x": -2.0,
+        "door_hinge": "LEFT",
+        "front_stoop_variant": "ROUNDED",
+        "facade_family": "LIGHT_BRICK",
+        "window_profile": "RESIDENTIAL",
+        "entrance_profile": "PODIUM_HIGH",
+        "balcony_mode": "STRIP",
+        "open_window_ratio": 0.3,
+        "combat_open_window_min": 2,
+        "wide_window_ratio": 0.2,
+        "tactical_facade_profile": "PANEL",
+        "massing_profile": "BALCONY_FACE",
+        "ground_floor_tactical_profile": "DEFENSIVE_BASE",
+        "facade_ac_ratio": 0.08,
+        "roof_prop_profile": "RESIDENTIAL",
+        "stair_window_mode": "EXPOSED",
+        "service_profile": "STANDARD",
+        "unit_mode": "METERS",
+        "export_profile": "EDITABLE_ONLY"
+      },
+      "archetypes": [
+        {
+          "weight": 2.35,
+          "defaults": {
+            "window_profile": "RESIDENTIAL_WIDE",
+            "entrance_profile": "PODIUM_HIGH",
+            "balcony_mode": "STRIP",
+            "tactical_facade_profile": "PANEL",
+            "massing_profile": "BALCONY_FACE",
+            "ground_floor_tactical_profile": "DEFENSIVE_BASE",
+            "roof_prop_profile": "RESIDENTIAL",
+            "stair_window_mode": "EXPOSED",
+            "service_profile": "STANDARD"
+          },
+          "ranges": {
+            "facade_family": {
+              "options": [
+                {
+                  "value": "LIGHT_BRICK",
+                  "weight": 3.2
+                },
+                {
+                  "value": "RED_BRICK",
+                  "weight": 1.2
+                },
+                {
+                  "value": "DESAT_BRICK",
+                  "weight": 1.0
+                }
+              ]
+            },
+            "window_profile": {
+              "options": [
+                {
+                  "value": "RESIDENTIAL_WIDE",
+                  "weight": 2.0
+                },
+                {
+                  "value": "RESIDENTIAL",
+                  "weight": 1.2
+                }
+              ]
+            },
+            "entrance_profile": {
+              "options": [
+                {
+                  "value": "PODIUM_HIGH",
+                  "weight": 3.0
+                }
+              ]
+            },
+            "balcony_mode": {
+              "options": [
+                {
+                  "value": "STRIP",
+                  "weight": 4.0
+                },
+                {
+                  "value": "SHORT",
+                  "weight": 0.7
+                },
+                {
+                  "value": "NONE",
+                  "weight": 0.2
+                }
+              ]
+            },
+            "tactical_facade_profile": {
+              "options": [
+                {
+                  "value": "PANEL",
+                  "weight": 2.4
+                },
+                {
+                  "value": "TENEMENT",
+                  "weight": 0.7
+                }
+              ]
+            },
+            "massing_profile": {
+              "options": [
+                {
+                  "value": "BALCONY_FACE",
+                  "weight": 2.7
+                },
+                {
+                  "value": "BASE_HEAVY",
+                  "weight": 0.8
+                }
+              ]
+            },
+            "ground_floor_tactical_profile": {
+              "options": [
+                {
+                  "value": "DEFENSIVE_BASE",
+                  "weight": 1.9
+                },
+                {
+                  "value": "MIXED_WINDOWS",
+                  "weight": 0.8
+                }
+              ]
+            },
+            "roof_prop_profile": {
+              "options": [
+                {
+                  "value": "RESIDENTIAL",
+                  "weight": 2.6
+                },
+                {
+                  "value": "HVAC",
+                  "weight": 0.45
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.28,
+              0.35
+            ],
+            "wide_window_ratio": [
+              0.16,
+              0.24
+            ],
+            "facade_ac_ratio": [
+              0.04,
+              0.09
+            ]
+          }
+        },
+        {
+          "weight": 1.5,
+          "defaults": {
+            "window_profile": "RESIDENTIAL",
+            "entrance_profile": "PODIUM_HIGH",
+            "balcony_mode": "SHORT",
+            "tactical_facade_profile": "STAIR_CORE",
+            "massing_profile": "BASE_HEAVY",
+            "ground_floor_tactical_profile": "OPEN_ENTRY",
+            "roof_prop_profile": "RESIDENTIAL",
+            "stair_window_mode": "EXPOSED",
+            "service_profile": "STANDARD"
+          },
+          "ranges": {
+            "facade_family": {
+              "options": [
+                {
+                  "value": "LIGHT_BRICK",
+                  "weight": 2.5
+                },
+                {
+                  "value": "DESAT_BRICK",
+                  "weight": 1.6
+                },
+                {
+                  "value": "RED_BRICK",
+                  "weight": 1.0
+                }
+              ]
+            },
+            "stair_placement": {
+              "options": [
+                {
+                  "value": "FRONT_RIGHT",
+                  "weight": 1.7
+                },
+                {
+                  "value": "BACK_RIGHT",
+                  "weight": 2.2
+                },
+                {
+                  "value": "BACK_LEFT",
+                  "weight": 2.0
+                }
+              ]
+            },
+            "entrance_profile": {
+              "options": [
+                {
+                  "value": "PODIUM_HIGH",
+                  "weight": 3.0
+                }
+              ]
+            },
+            "balcony_mode": {
+              "options": [
+                {
+                  "value": "SHORT",
+                  "weight": 2.2
+                },
+                {
+                  "value": "STRIP",
+                  "weight": 1.2
+                },
+                {
+                  "value": "NONE",
+                  "weight": 0.4
+                }
+              ]
+            },
+            "massing_profile": {
+              "options": [
+                {
+                  "value": "BASE_HEAVY",
+                  "weight": 2.0
+                },
+                {
+                  "value": "TOP_SETBACK",
+                  "weight": 1.1
+                },
+                {
+                  "value": "BOX",
+                  "weight": 0.6
+                }
+              ]
+            },
+            "ground_floor_tactical_profile": {
+              "options": [
+                {
+                  "value": "OPEN_ENTRY",
+                  "weight": 2.0
+                },
+                {
+                  "value": "DEFENSIVE_BASE",
+                  "weight": 1.0
+                }
+              ]
+            },
+            "roof_prop_profile": {
+              "options": [
+                {
+                  "value": "RESIDENTIAL",
+                  "weight": 2.0
+                },
+                {
+                  "value": "HVAC",
+                  "weight": 0.8
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.26,
+              0.34
+            ],
+            "wide_window_ratio": [
+              0.14,
+              0.22
+            ],
+            "facade_ac_ratio": [
+              0.05,
+              0.1
+            ]
+          }
+        }
+      ],
+      "ranges": {
+        "width": [
+          8.0,
+          12.0
+        ],
+        "depth": [
+          6.0,
+          9.0
+        ],
+        "floor_count": [
+          3,
+          6
+        ],
+        "stair_placement": {
+          "options": [
+            {
+              "value": "CENTER",
+              "weight": 0.5
+            },
+            {
+              "value": "FRONT_RIGHT",
+              "weight": 1.6
+            },
+            {
+              "value": "BACK_RIGHT",
+              "weight": 1.9
+            },
+            {
+              "value": "BACK_LEFT",
+              "weight": 1.9
+            }
+          ]
+        },
+        "railing_enabled": {
+          "options": [
+            {
+              "value": true,
+              "weight": 1.0
+            },
+            {
+              "value": false,
+              "weight": 2.2
+            }
+          ]
+        },
+        "combat_open_window_min": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "id": "office_block",
+      "label": "Office Block",
+      "description": "Baseline office block for commercial control-group rollout",
+      "block_lot_type": "COMMERCIAL",
+      "defaults": {
+        "width": 14.0,
+        "depth": 10.0,
+        "floor_count": 5,
+        "floor_height": 3.3,
+        "wall_thickness": 0.24,
+        "slab_thickness": 0.18,
+        "parapet_height": 0.9,
+        "stair_core_enabled": true,
+        "stair_placement": "BACK_RIGHT",
+        "core_width": 2.6,
+        "core_depth": 4.2,
+        "stair_width": 1.8,
+        "step_count": 18,
+        "railing_enabled": true,
+        "door_enabled": true,
+        "door_width": 1.4,
+        "door_height": 2.3,
+        "door_thickness": 0.07,
+        "door_offset_x": -3.0,
+        "door_hinge": "LEFT",
+        "front_stoop_variant": "ROUNDED",
+        "facade_family": "DESAT_BRICK",
+        "window_profile": "OFFICE_BAND",
+        "entrance_profile": "PODIUM_HIGH",
+        "balcony_mode": "STRIP",
+        "open_window_ratio": 0.32,
+        "combat_open_window_min": 2,
+        "wide_window_ratio": 0.42,
+        "tactical_facade_profile": "OFFICE_COMBAT",
+        "massing_profile": "TOP_SETBACK",
+        "ground_floor_tactical_profile": "OPEN_ENTRY",
+        "facade_ac_ratio": 0.04,
+        "roof_prop_profile": "HVAC",
+        "stair_window_mode": "EXPOSED",
+        "service_profile": "HEAVY",
+        "unit_mode": "METERS",
+        "export_profile": "EDITABLE_ONLY"
+      },
+      "archetypes": [
+        {
+          "weight": 2.2,
+          "defaults": {
+            "facade_mode": "UNIFORM_BRICK",
+            "facade_band_profile": "BRICK_REVEAL",
+            "window_profile": "OFFICE_BAND",
+            "entrance_profile": "PODIUM_HIGH",
+            "balcony_mode": "NONE",
+            "tactical_facade_profile": "OFFICE_COMBAT",
+            "massing_profile": "TOP_SETBACK",
+            "ground_floor_tactical_profile": "OPEN_ENTRY",
+            "roof_mode": "FLAT",
+            "roof_prop_profile": "HVAC",
+            "stair_window_mode": "EXPOSED",
+            "service_profile": "STANDARD"
+          },
+          "ranges": {
+            "width": [
+              12.0,
+              16.2
+            ],
+            "depth": [
+              8.0,
+              11.0
+            ],
+            "floor_count": [
+              4,
+              6
+            ],
+            "facade_family": {
+              "options": [
+                {
+                  "value": "DESAT_BRICK",
+                  "weight": 3.0
+                },
+                {
+                  "value": "LIGHT_BRICK",
+                  "weight": 1.0
+                },
+                {
+                  "value": "RED_BRICK",
+                  "weight": 0.7
+                }
+              ]
+            },
+            "entrance_profile": {
+              "options": [
+                {
+                  "value": "PODIUM_HIGH",
+                  "weight": 3.2
+                }
+              ]
+            },
+            "balcony_mode": {
+              "options": [
+                {
+                  "value": "NONE",
+                  "weight": 2.7
+                },
+                {
+                  "value": "SHORT",
+                  "weight": 0.8
+                },
+                {
+                  "value": "STRIP",
+                  "weight": 0.2
+                }
+              ]
+            },
+            "tactical_facade_profile": {
+              "options": [
+                {
+                  "value": "OFFICE_COMBAT",
+                  "weight": 2.2
+                },
+                {
+                  "value": "BRUTALIST",
+                  "weight": 0.8
+                }
+              ]
+            },
+            "massing_profile": {
+              "options": [
+                {
+                  "value": "TOP_SETBACK",
+                  "weight": 3.2
+                }
+              ]
+            },
+            "ground_floor_tactical_profile": {
+              "options": [
+                {
+                  "value": "OPEN_ENTRY",
+                  "weight": 1.9
+                },
+                {
+                  "value": "DEFENSIVE_BASE",
+                  "weight": 0.9
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.3,
+              0.36
+            ],
+            "wide_window_ratio": [
+              0.34,
+              0.48
+            ],
+            "facade_ac_ratio": [
+              0.01,
+              0.03
+            ]
+          }
+        },
+        {
+          "weight": 1.0,
+          "defaults": {
+            "window_profile": "OFFICE_BAND",
+            "entrance_profile": "PODIUM_HIGH",
+            "balcony_mode": "STRIP",
+            "tactical_facade_profile": "OFFICE_COMBAT",
+            "massing_profile": "BASE_HEAVY",
+            "ground_floor_tactical_profile": "OPEN_ENTRY",
+            "roof_prop_profile": "HVAC",
+            "stair_window_mode": "EXPOSED",
+            "service_profile": "HEAVY"
+          },
+          "ranges": {
+            "facade_family": {
+              "options": [
+                {
+                  "value": "DESAT_BRICK",
+                  "weight": 2.4
+                },
+                {
+                  "value": "LIGHT_BRICK",
+                  "weight": 1.1
+                },
+                {
+                  "value": "RED_BRICK",
+                  "weight": 0.9
+                }
+              ]
+            },
+            "entrance_profile": {
+              "options": [
+                {
+                  "value": "PODIUM_HIGH",
+                  "weight": 3.0
+                }
+              ]
+            },
+            "balcony_mode": {
+              "options": [
+                {
+                  "value": "STRIP",
+                  "weight": 2.8
+                },
+                {
+                  "value": "SHORT",
+                  "weight": 0.9
+                },
+                {
+                  "value": "NONE",
+                  "weight": 0.3
+                }
+              ]
+            },
+            "massing_profile": {
+              "options": [
+                {
+                  "value": "BASE_HEAVY",
+                  "weight": 1.9
+                },
+                {
+                  "value": "BALCONY_FACE",
+                  "weight": 1.4
+                },
+                {
+                  "value": "TOP_SETBACK",
+                  "weight": 1.0
+                }
+              ]
+            },
+            "ground_floor_tactical_profile": {
+              "options": [
+                {
+                  "value": "OPEN_ENTRY",
+                  "weight": 1.8
+                },
+                {
+                  "value": "DEFENSIVE_BASE",
+                  "weight": 0.8
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.32,
+              0.38
+            ],
+            "wide_window_ratio": [
+              0.36,
+              0.5
+            ],
+            "facade_ac_ratio": [
+              0.01,
+              0.03
+            ]
+          }
+        }
+      ],
+      "ranges": {
+        "width": [
+          12.0,
+          20.0
+        ],
+        "depth": [
+          8.0,
+          14.0
+        ],
+        "floor_count": [
+          4,
+          8
+        ],
+        "stair_placement": {
+          "options": [
+            {
+              "value": "CENTER",
+              "weight": 0.7
+            },
+            {
+              "value": "BACK_RIGHT",
+              "weight": 2.0
+            },
+            {
+              "value": "BACK_LEFT",
+              "weight": 2.0
+            }
+          ]
+        },
+        "door_offset_x": [
+          -4.0,
+          4.0
+        ],
+        "combat_open_window_min": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "id": "shop_unit",
+      "label": "Shop Unit",
+      "description": "Stage 3 conditional storefront benchmark for the shop-unit family; keep only if the asymmetrical display-bay read survives battle distance, otherwise defer it from the active corrective catalog",
+      "defaults": {
+        "width": 9.0,
+        "depth": 6.8,
+        "floor_count": 1,
+        "floor_height": 3.2,
+        "wall_thickness": 0.2,
+        "slab_thickness": 0.16,
+        "parapet_height": 0.45,
+        "stair_core_enabled": false,
+        "stair_placement": "CENTER",
+        "core_width": 2.0,
+        "core_depth": 3.8,
+        "stair_width": 1.8,
+        "step_count": 16,
+        "railing_enabled": false,
+        "door_enabled": true,
+        "door_width": 1.2,
+        "door_height": 2.2,
+        "door_thickness": 0.06,
+        "door_offset_x": -1.6,
+        "door_hinge": "LEFT",
+        "facade_family": "PLASTER_WARM",
+        "facade_mode": "UNIFORM_FLAT",
+        "facade_band_profile": "CONCRETE_BAND",
+        "window_profile": "PANORAMIC",
+        "entrance_profile": "FLUSH",
+        "balcony_mode": "NONE",
+        "open_window_ratio": 0.24,
+        "combat_open_window_min": 1,
+        "wide_window_ratio": 0.18,
+        "tactical_facade_profile": "MIXED_USE",
+        "massing_profile": "BASE_HEAVY",
+        "ground_floor_tactical_profile": "STOREFRONT",
+        "foundation_profile": "HEAVY_BASE",
+        "facade_ac_ratio": 0.02,
+        "door_profile": "HINGED",
+        "roof_mode": "FLAT",
+        "roof_prop_profile": "NONE",
+        "stair_window_mode": "NONE",
+        "service_profile": "STANDARD",
+        "facade_completion": 1.0,
+        "unit_mode": "METERS",
+        "export_profile": "EDITABLE_ONLY"
+      },
+      "archetypes": [
+        {
+          "weight": 2.4,
+          "defaults": {
+            "window_profile": "PANORAMIC",
+            "entrance_profile": "FLUSH",
+            "balcony_mode": "NONE",
+            "tactical_facade_profile": "MIXED_USE",
+            "massing_profile": "BASE_HEAVY",
+            "ground_floor_tactical_profile": "STOREFRONT",
+            "roof_prop_profile": "NONE",
+            "stair_window_mode": "NONE",
+            "service_profile": "STANDARD"
+          },
+          "ranges": {
+            "width": [
+              7.8,
+              10.2
+            ],
+            "depth": [
+              5.8,
+              7.4
+            ],
+            "floor_count": [
+              1,
+              1
+            ],
+            "door_offset_x": [
+              -1.8,
+              1.8
+            ],
+            "facade_family": {
+              "options": [
+                {
+                  "value": "PLASTER_WARM",
+                  "weight": 2.1
+                },
+                {
+                  "value": "PLASTER_COOL",
+                  "weight": 1.4
+                },
+                {
+                  "value": "CONCRETE_FLAT",
+                  "weight": 0.8
+                }
+              ]
+            },
+            "facade_band_profile": {
+              "options": [
+                {
+                  "value": "CONCRETE_BAND",
+                  "weight": 2.3
+                },
+                {
+                  "value": "NONE",
+                  "weight": 0.7
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.18,
+              0.26
+            ],
+            "wide_window_ratio": [
+              0.14,
+              0.2
+            ],
+            "facade_ac_ratio": [
+              0.01,
+              0.03
+            ]
+          }
+        }
+      ],
+      "ranges": {
+        "width": [
+          7.8,
+          11.5
+        ],
+        "depth": [
+          5.8,
+          8.4
+        ],
+        "door_offset_x": [
+          -2.1,
+          2.1
+        ],
+        "door_hinge": {
+          "options": [
+            {
+              "value": "LEFT",
+              "weight": 1.0
+            },
+            {
+              "value": "RIGHT",
+              "weight": 1.0
+            }
+          ]
+        },
+        "facade_family": {
+          "options": [
+            {
+              "value": "PLASTER_WARM",
+              "weight": 2.0
+            },
+            {
+              "value": "PLASTER_COOL",
+              "weight": 1.4
+            },
+            {
+              "value": "CONCRETE_FLAT",
+              "weight": 0.9
+            }
+          ]
+        },
+        "facade_band_profile": {
+          "options": [
+            {
+              "value": "CONCRETE_BAND",
+              "weight": 2.2
+            },
+            {
+              "value": "NONE",
+              "weight": 0.8
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pharmacy",
+      "label": "Pharmacy",
+      "description": "Stage 3 active medical storefront benchmark for the pharmacy family; centered flush entry, usable flank openings, and cross/signage hero must survive battle distance before any broader rollout is reconsidered",
+      "defaults": {
+        "width": 9.8,
+        "depth": 7.2,
+        "floor_count": 1,
+        "floor_height": 3.2,
+        "wall_thickness": 0.2,
+        "slab_thickness": 0.16,
+        "parapet_height": 0.55,
+        "stair_core_enabled": false,
+        "stair_placement": "BACK_RIGHT",
+        "core_width": 2.0,
+        "core_depth": 4.0,
+        "stair_width": 1.8,
+        "step_count": 16,
+        "railing_enabled": false,
+        "door_enabled": true,
+        "door_width": 1.2,
+        "door_height": 2.2,
+        "door_thickness": 0.06,
+        "door_offset_x": 0.0,
+        "door_hinge": "LEFT",
+        "facade_family": "PLASTER_COOL",
+        "facade_mode": "UNIFORM_FLAT",
+        "facade_band_profile": "CONCRETE_BAND",
+        "window_profile": "PANORAMIC",
+        "entrance_profile": "FLUSH",
+        "balcony_mode": "NONE",
+        "open_window_ratio": 0.28,
+        "combat_open_window_min": 2,
+        "wide_window_ratio": 0.18,
+        "tactical_facade_profile": "PANEL",
+        "massing_profile": "BASE_HEAVY",
+        "ground_floor_tactical_profile": "STOREFRONT",
+        "foundation_profile": "STONE_BASE",
+        "facade_ac_ratio": 0.03,
+        "door_profile": "HINGED",
+        "roof_mode": "FLAT",
+        "roof_prop_profile": "NONE",
+        "stair_window_mode": "NONE",
+        "service_profile": "STANDARD",
+        "facade_completion": 1.0,
+        "unit_mode": "METERS",
+        "export_profile": "EDITABLE_ONLY"
+      },
+      "archetypes": [
+        {
+          "weight": 2.0,
+          "defaults": {
+            "stair_core_enabled": false,
+            "window_profile": "PANORAMIC",
+            "entrance_profile": "FLUSH",
+            "balcony_mode": "NONE",
+            "tactical_facade_profile": "MIXED_USE",
+            "massing_profile": "BASE_HEAVY",
+            "ground_floor_tactical_profile": "STOREFRONT",
+            "foundation_profile": "STONE_BASE",
+            "door_profile": "HINGED",
+            "roof_prop_profile": "NONE",
+            "stair_window_mode": "NONE",
+            "service_profile": "STANDARD"
+          },
+          "ranges": {
+            "width": [
+              8.6,
+              10.6
+            ],
+            "depth": [
+              6.6,
+              7.8
+            ],
+            "floor_count": [
+              1,
+              1
+            ],
+            "door_offset_x": [
+              0.0,
+              0.0
+            ],
+            "facade_family": {
+              "options": [
+                {
+                  "value": "PLASTER_COOL",
+                  "weight": 2.1
+                },
+                {
+                  "value": "PLASTER_WARM",
+                  "weight": 1.3
+                },
+                {
+                  "value": "CONCRETE_FLAT",
+                  "weight": 0.6
+                }
+              ]
+            },
+            "facade_band_profile": {
+              "options": [
+                {
+                  "value": "CONCRETE_BAND",
+                  "weight": 2.0
+                },
+                {
+                  "value": "NONE",
+                  "weight": 0.7
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.24,
+              0.32
+            ],
+            "wide_window_ratio": [
+              0.14,
+              0.22
+            ],
+            "facade_ac_ratio": [
+              0.01,
+              0.04
+            ]
+          }
+        }
+      ],
+      "ranges": {
+        "width": [
+          8.6,
+          11.8
+        ],
+        "depth": [
+          6.6,
+          9.2
+        ],
+        "floor_count": [
+          1,
+          1
+        ],
+        "door_offset_x": [
+          0.0,
+          0.0
+        ],
+        "combat_open_window_min": [
+          2,
+          2
+        ],
+        "door_hinge": {
+          "options": [
+            {
+              "value": "LEFT",
+              "weight": 1.0
+            },
+            {
+              "value": "RIGHT",
+              "weight": 0.8
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "clinic",
+      "label": "Clinic",
+      "description": "Stage 4 civic/service benchmark for the clinic family; calm centered flush entry and clean service identity must survive battle distance before any broader rollout is reconsidered",
+      "defaults": {
+        "width": 10.5,
+        "depth": 8.2,
+        "floor_count": 2,
+        "floor_height": 3.1,
+        "wall_thickness": 0.2,
+        "slab_thickness": 0.16,
+        "parapet_height": 0.7,
+        "stair_core_enabled": true,
+        "stair_placement": "BACK_RIGHT",
+        "core_width": 2.0,
+        "core_depth": 4.0,
+        "stair_width": 1.8,
+        "step_count": 16,
+        "railing_enabled": false,
+        "door_enabled": true,
+        "door_width": 1.2,
+        "door_height": 2.2,
+        "door_thickness": 0.06,
+        "door_offset_x": 0.0,
+        "door_hinge": "LEFT",
+        "facade_family": "PLASTER_COOL",
+        "facade_mode": "UNIFORM_FLAT",
+        "facade_band_profile": "CONCRETE_BAND",
+        "window_profile": "SMALL_SQUARE",
+        "entrance_profile": "FLUSH",
+        "balcony_mode": "NONE",
+        "open_window_ratio": 0.22,
+        "combat_open_window_min": 1,
+        "wide_window_ratio": 0.08,
+        "tactical_facade_profile": "PANEL",
+        "massing_profile": "BOX",
+        "ground_floor_tactical_profile": "STOREFRONT",
+        "foundation_profile": "STONE_BASE",
+        "facade_ac_ratio": 0.04,
+        "door_profile": "HINGED",
+        "roof_mode": "FLAT",
+        "roof_prop_profile": "NONE",
+        "stair_window_mode": "EXPOSED",
+        "service_profile": "STANDARD",
+        "facade_completion": 1.0,
+        "unit_mode": "METERS",
+        "export_profile": "EDITABLE_ONLY"
+      },
+      "archetypes": [
+        {
+          "weight": 1.7,
+          "defaults": {
+            "window_profile": "SMALL_SQUARE",
+            "entrance_profile": "FLUSH",
+            "balcony_mode": "NONE",
+            "tactical_facade_profile": "PANEL",
+            "massing_profile": "BOX",
+            "ground_floor_tactical_profile": "STOREFRONT",
+            "foundation_profile": "STONE_BASE",
+            "door_profile": "HINGED",
+            "roof_prop_profile": "NONE",
+            "stair_window_mode": "EXPOSED",
+            "service_profile": "STANDARD"
+          },
+          "ranges": {
+            "width": [
+              9.6,
+              12.2
+            ],
+            "depth": [
+              7.8,
+              9.8
+            ],
+            "floor_count": [
+              2,
+              2
+            ],
+            "door_offset_x": [
+              0.0,
+              0.0
+            ],
+            "window_profile": {
+              "options": [
+                {
+                  "value": "SMALL_SQUARE",
+                  "weight": 1.0
+                }
+              ]
+            },
+            "facade_family": {
+              "options": [
+                {
+                  "value": "PLASTER_COOL",
+                  "weight": 2.1
+                },
+                {
+                  "value": "PLASTER_WARM",
+                  "weight": 0.9
+                },
+                {
+                  "value": "CONCRETE_FLAT",
+                  "weight": 0.8
+                }
+              ]
+            },
+            "facade_band_profile": {
+              "options": [
+                {
+                  "value": "CONCRETE_BAND",
+                  "weight": 2.2
+                },
+                {
+                  "value": "NONE",
+                  "weight": 0.4
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.16,
+              0.22
+            ],
+            "wide_window_ratio": [
+              0.06,
+              0.1
+            ],
+            "facade_ac_ratio": [
+              0.03,
+              0.05
+            ]
+          }
+        }
+      ],
+      "ranges": {
+        "width": [
+          9.2,
+          13.0
+        ],
+        "depth": [
+          7.2,
+          10.0
+        ],
+        "floor_count": [
+          2,
+          2
+        ],
+        "door_offset_x": [
+          0.0,
+          0.0
+        ],
+        "facade_family": {
+          "options": [
+            {
+              "value": "PLASTER_COOL",
+              "weight": 2.0
+            },
+            {
+              "value": "PLASTER_WARM",
+              "weight": 1.2
+            },
+            {
+              "value": "CONCRETE_FLAT",
+              "weight": 1.0
+            }
+          ]
+        },
+        "window_profile": {
+          "options": [
+            {
+              "value": "SMALL_SQUARE",
+              "weight": 1.8
+            },
+            {
+              "value": "TALL_NARROW",
+              "weight": 1.3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "depot",
+      "label": "Depot",
+      "description": "Wave 1 compact 2-floor industrial garage: flat roof, rear traversal, stairs to upper floor and roof, and tactical open apertures",
+      "defaults": {
+        "width": 12.0,
+        "depth": 8.5,
+        "floor_count": 2,
+        "floor_height": 3.4,
+        "wall_thickness": 0.22,
+        "slab_thickness": 0.16,
+        "parapet_height": 0.55,
+        "stair_core_enabled": true,
+        "stair_placement": "BACK_RIGHT",
+        "core_width": 2.2,
+        "core_depth": 4.0,
+        "stair_width": 1.8,
+        "step_count": 16,
+        "railing_enabled": false,
+        "door_enabled": true,
+        "door_width": 1.4,
+        "door_height": 2.3,
+        "door_thickness": 0.07,
+        "door_offset_x": 2.2,
+        "door_hinge": "LEFT",
+        "facade_family": "GREY_BRICK",
+        "facade_mode": "UNIFORM_BRICK",
+        "facade_band_profile": "BRICK_REVEAL",
+        "window_profile": "TALL_NARROW",
+        "entrance_profile": "FLUSH",
+        "balcony_mode": "NONE",
+        "open_window_ratio": 0.36,
+        "combat_open_window_min": 2,
+        "wide_window_ratio": 0.06,
+        "tactical_facade_profile": "BRUTALIST",
+        "massing_profile": "BASE_HEAVY",
+        "ground_floor_tactical_profile": "OPEN_ENTRY",
+        "foundation_profile": "HEAVY_BASE",
+        "facade_ac_ratio": 0.0,
+        "door_profile": "HINGED",
+        "roof_mode": "FLAT",
+        "roof_prop_profile": "NONE",
+        "stair_window_mode": "NONE",
+        "service_profile": "HEAVY",
+        "facade_completion": 1.0,
+        "unit_mode": "METERS",
+        "export_profile": "EDITABLE_ONLY"
+      },
+      "archetypes": [
+        {
+          "weight": 2.5,
+          "defaults": {
+            "window_profile": "TALL_NARROW",
+            "entrance_profile": "FLUSH",
+            "balcony_mode": "NONE",
+            "tactical_facade_profile": "BRUTALIST",
+            "massing_profile": "BASE_HEAVY",
+            "ground_floor_tactical_profile": "OPEN_ENTRY",
+            "foundation_profile": "HEAVY_BASE",
+            "door_profile": "HINGED",
+            "roof_mode": "FLAT",
+            "roof_prop_profile": "NONE",
+            "stair_window_mode": "NONE",
+            "service_profile": "HEAVY"
+          },
+          "ranges": {
+            "width": [
+              10.8,
+              15.0
+            ],
+            "depth": [
+              7.6,
+              10.2
+            ],
+            "floor_count": [
+              2,
+              2
+            ],
+            "door_offset_x": [
+              1.8,
+              2.8
+            ],
+            "stair_placement": {
+              "options": [
+                {
+                  "value": "BACK_RIGHT",
+                  "weight": 2.0
+                },
+                {
+                  "value": "BACK_LEFT",
+                  "weight": 2.0
+                }
+              ]
+            },
+            "facade_family": {
+              "options": [
+                {
+                  "value": "GREY_BRICK",
+                  "weight": 2.2
+                },
+                {
+                  "value": "DARK_BRICK",
+                  "weight": 1.2
+                },
+                {
+                  "value": "BROWN_BRICK",
+                  "weight": 0.4
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.3,
+              0.46
+            ],
+            "wide_window_ratio": [
+              0.04,
+              0.08
+            ],
+            "facade_ac_ratio": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      ],
+      "ranges": {
+        "width": [
+          10.5,
+          15.0
+        ],
+        "depth": [
+          7.5,
+          10.5
+        ],
+        "floor_count": [
+          2,
+          2
+        ],
+        "door_offset_x": [
+          1.8,
+          3.0
+        ],
+        "stair_placement": {
+          "options": [
+            {
+              "value": "BACK_RIGHT",
+              "weight": 2.0
+            },
+            {
+              "value": "BACK_LEFT",
+              "weight": 2.0
+            }
+          ]
+        },
+        "combat_open_window_min": [
+          2,
+          3
+        ],
+        "facade_family": {
+          "options": [
+            {
+              "value": "GREY_BRICK",
+              "weight": 2.2
+            },
+            {
+              "value": "DARK_BRICK",
+              "weight": 1.2
+            },
+            {
+              "value": "BROWN_BRICK",
+              "weight": 0.4
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "market_hall",
+      "label": "Market Hall",
+      "description": "Stage 6 flush-entry hall benchmark; porch, colonnade, roof plate, and upper support openings must read as one coherent structure before any later re-promotion is considered",
+      "defaults": {
+        "width": 14.2,
+        "depth": 10.0,
+        "floor_count": 2,
+        "floor_height": 3.4,
+        "wall_thickness": 0.22,
+        "slab_thickness": 0.16,
+        "parapet_height": 0.65,
+        "stair_core_enabled": true,
+        "stair_placement": "BACK_RIGHT",
+        "core_width": 2.2,
+        "core_depth": 4.2,
+        "stair_width": 1.8,
+        "step_count": 18,
+        "railing_enabled": false,
+        "door_enabled": true,
+        "door_width": 1.35,
+        "door_height": 2.3,
+        "door_thickness": 0.06,
+        "door_offset_x": 0.0,
+        "door_hinge": "LEFT",
+        "facade_family": "CONCRETE_FLAT",
+        "facade_mode": "UNIFORM_FLAT",
+        "facade_band_profile": "CONCRETE_BAND",
+        "window_profile": "PANORAMIC",
+        "entrance_profile": "FLUSH",
+        "balcony_mode": "NONE",
+        "open_window_ratio": 0.26,
+        "combat_open_window_min": 1,
+        "wide_window_ratio": 0.28,
+        "tactical_facade_profile": "PANEL",
+        "massing_profile": "PILOTIS",
+        "ground_floor_tactical_profile": "OPEN_ENTRY",
+        "foundation_profile": "HEAVY_BASE",
+        "facade_ac_ratio": 0.02,
+        "door_profile": "HINGED",
+        "roof_mode": "SHED",
+        "roof_prop_profile": "NONE",
+        "stair_window_mode": "EXPOSED",
+        "service_profile": "STANDARD",
+        "facade_completion": 1.0,
+        "unit_mode": "METERS",
+        "export_profile": "EDITABLE_ONLY"
+      },
+      "archetypes": [
+        {
+          "weight": 2.3,
+          "defaults": {
+            "facade_mode": "UNIFORM_FLAT",
+            "facade_band_profile": "CONCRETE_BAND",
+            "window_profile": "PANORAMIC",
+            "entrance_profile": "FLUSH",
+            "balcony_mode": "NONE",
+            "tactical_facade_profile": "PANEL",
+            "massing_profile": "PILOTIS",
+            "ground_floor_tactical_profile": "OPEN_ENTRY",
+            "foundation_profile": "HEAVY_BASE",
+            "door_profile": "HINGED",
+            "roof_mode": "SHED",
+            "roof_prop_profile": "NONE",
+            "stair_window_mode": "EXPOSED",
+            "service_profile": "NONE",
+            "facade_completion": 1.0
+          },
+          "ranges": {
+            "width": [
+              13.0,
+              15.8
+            ],
+            "depth": [
+              9.0,
+              11.2
+            ],
+            "floor_count": [
+              2,
+              2
+            ],
+            "door_offset_x": [
+              0.0,
+              0.0
+            ],
+            "stair_placement": {
+              "options": [
+                {
+                  "value": "BACK_RIGHT",
+                  "weight": 2.0
+                },
+                {
+                  "value": "BACK_LEFT",
+                  "weight": 2.0
+                },
+                {
+                  "value": "CENTER",
+                  "weight": 0.5
+                }
+              ]
+            },
+            "facade_family": {
+              "options": [
+                {
+                  "value": "CONCRETE_FLAT",
+                  "weight": 2.0
+                },
+                {
+                  "value": "PLASTER_COOL",
+                  "weight": 1.3
+                },
+                {
+                  "value": "PLASTER_WARM",
+                  "weight": 0.9
+                }
+              ]
+            },
+            "facade_band_profile": {
+              "options": [
+                {
+                  "value": "CONCRETE_BAND",
+                  "weight": 2.3
+                },
+                {
+                  "value": "NONE",
+                  "weight": 0.6
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.22,
+              0.3
+            ],
+            "wide_window_ratio": [
+              0.24,
+              0.34
+            ],
+            "facade_ac_ratio": [
+              0.0,
+              0.03
+            ]
+          }
+        }
+      ],
+      "ranges": {
+        "width": [
+          12.8,
+          16.6
+        ],
+        "depth": [
+          8.8,
+          11.8
+        ],
+        "floor_count": [
+          2,
+          2
+        ],
+        "stair_placement": {
+          "options": [
+            {
+              "value": "BACK_RIGHT",
+              "weight": 2.0
+            },
+            {
+              "value": "BACK_LEFT",
+              "weight": 2.0
+            },
+            {
+              "value": "CENTER",
+              "weight": 0.5
+            }
+          ]
+        },
+        "door_offset_x": [
+          -3.0,
+          3.0
+        ],
+        "combat_open_window_min": [
+          1,
+          1
+        ],
+        "door_hinge": {
+          "options": [
+            {
+              "value": "LEFT",
+              "weight": 1.0
+            },
+            {
+              "value": "RIGHT",
+              "weight": 0.8
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "warehouse",
+      "label": "Warehouse",
+      "description": "Wave 1 1-floor industrial hall: flat roof, rear traversal, roof access via stairs, and fewer larger tactical apertures",
+      "defaults": {
+        "width": 19.4,
+        "depth": 12.4,
+        "floor_count": 1,
+        "floor_height": 4.0,
+        "wall_thickness": 0.24,
+        "slab_thickness": 0.18,
+        "parapet_height": 0.65,
+        "stair_core_enabled": true,
+        "stair_placement": "BACK_RIGHT",
+        "core_width": 2.4,
+        "core_depth": 4.2,
+        "stair_width": 1.8,
+        "step_count": 18,
+        "railing_enabled": false,
+        "door_enabled": true,
+        "door_width": 1.5,
+        "door_height": 2.4,
+        "door_thickness": 0.07,
+        "door_offset_x": 4.8,
+        "door_hinge": "LEFT",
+        "facade_family": "CONCRETE_FLAT",
+        "facade_mode": "UNIFORM_FLAT",
+        "facade_band_profile": "CONCRETE_BAND",
+        "window_profile": "TALL_NARROW",
+        "entrance_profile": "FLUSH",
+        "balcony_mode": "NONE",
+        "open_window_ratio": 0.32,
+        "combat_open_window_min": 3,
+        "wide_window_ratio": 0.12,
+        "tactical_facade_profile": "BRUTALIST",
+        "massing_profile": "BOX",
+        "ground_floor_tactical_profile": "OPEN_ENTRY",
+        "foundation_profile": "HEAVY_BASE",
+        "facade_ac_ratio": 0.0,
+        "door_profile": "HINGED",
+        "roof_mode": "FLAT",
+        "roof_prop_profile": "NONE",
+        "stair_window_mode": "NONE",
+        "service_profile": "HEAVY",
+        "facade_completion": 1.0,
+        "unit_mode": "METERS",
+        "export_profile": "EDITABLE_ONLY"
+      },
+      "archetypes": [
+        {
+          "weight": 1.1,
+          "defaults": {
+            "facade_mode": "UNIFORM_FLAT",
+            "facade_band_profile": "CONCRETE_BAND",
+            "window_profile": "SMALL_SQUARE",
+            "entrance_profile": "FLUSH",
+            "balcony_mode": "NONE",
+            "tactical_facade_profile": "PANEL",
+            "massing_profile": "BOX",
+            "ground_floor_tactical_profile": "OPEN_ENTRY",
+            "foundation_profile": "HEAVY_BASE",
+            "door_profile": "HINGED",
+            "roof_mode": "FLAT",
+            "roof_prop_profile": "NONE",
+            "stair_window_mode": "NONE",
+            "service_profile": "HEAVY",
+            "facade_completion": 1.0
+          },
+          "ranges": {
+            "width": [
+              16.0,
+              18.6
+            ],
+            "depth": [
+              11.2,
+              12.8
+            ],
+            "floor_count": [
+              1,
+              1
+            ],
+            "door_offset_x": [
+              4.4,
+              5.2
+            ],
+            "stair_placement": {
+              "options": [
+                {
+                  "value": "BACK_RIGHT",
+                  "weight": 2.0
+                },
+                {
+                  "value": "BACK_LEFT",
+                  "weight": 2.0
+                }
+              ]
+            },
+            "facade_family": {
+              "options": [
+                {
+                  "value": "CONCRETE_FLAT",
+                  "weight": 2.4
+                },
+                {
+                  "value": "PLASTER_COOL",
+                  "weight": 0.4
+                }
+              ]
+            },
+            "facade_band_profile": {
+              "options": [
+                {
+                  "value": "CONCRETE_BAND",
+                  "weight": 2.2
+                },
+                {
+                  "value": "NONE",
+                  "weight": 0.6
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.24,
+              0.4
+            ],
+            "wide_window_ratio": [
+              0.08,
+              0.16
+            ],
+            "facade_ac_ratio": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      ],
+      "ranges": {
+        "width": [
+          18.0,
+          21.0
+        ],
+        "depth": [
+          11.2,
+          13.6
+        ],
+        "floor_count": [
+          1,
+          1
+        ],
+        "door_offset_x": [
+          4.4,
+          5.2
+        ],
+        "stair_placement": {
+          "options": [
+            {
+              "value": "BACK_RIGHT",
+              "weight": 2.0
+            },
+            {
+              "value": "BACK_LEFT",
+              "weight": 2.0
+            }
+          ]
+        },
+        "combat_open_window_min": [
+          3,
+          4
+        ],
+        "facade_family": {
+          "options": [
+            {
+              "value": "CONCRETE_FLAT",
+              "weight": 2.4
+            },
+            {
+              "value": "PLASTER_COOL",
+              "weight": 0.4
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hangar",
+      "label": "Hangar",
+      "description": "Manual-only single-floor hangar benchmark: tall centered front/back portals, shallow gable shell, large side glazing fields, and no ordinary human door",
+      "defaults": {
+        "width": 20.0,
+        "depth": 14.0,
+        "floor_count": 1,
+        "floor_height": 4.6,
+        "wall_thickness": 0.24,
+        "slab_thickness": 0.18,
+        "parapet_height": 0.0,
+        "stair_core_enabled": false,
+        "stair_placement": "CENTER",
+        "core_width": 2.4,
+        "core_depth": 4.2,
+        "stair_width": 1.8,
+        "step_count": 18,
+        "railing_enabled": false,
+        "door_enabled": false,
+        "door_width": 1.0,
+        "door_height": 2.2,
+        "door_thickness": 0.07,
+        "door_offset_x": 0.0,
+        "door_hinge": "LEFT",
+        "facade_family": "PLASTER_COOL",
+        "facade_mode": "UNIFORM_FLAT",
+        "facade_band_profile": "NONE",
+        "window_profile": "TALL_NARROW",
+        "entrance_profile": "FLUSH",
+        "balcony_mode": "NONE",
+        "open_window_ratio": 0.34,
+        "combat_open_window_min": 1,
+        "wide_window_ratio": 0.0,
+        "tactical_facade_profile": "BRUTALIST",
+        "massing_profile": "BOX",
+        "ground_floor_tactical_profile": "OPEN_ENTRY",
+        "foundation_profile": "PLAIN",
+        "facade_ac_ratio": 0.0,
+        "door_profile": "HINGED",
+        "roof_mode": "GABLE",
+        "roof_prop_profile": "NONE",
+        "stair_window_mode": "NONE",
+        "service_profile": "NONE",
+        "facade_completion": 1.0,
+        "unit_mode": "METERS",
+        "export_profile": "EDITABLE_ONLY"
+      },
+      "archetypes": [
+        {
+          "weight": 1.25,
+          "defaults": {
+            "facade_mode": "UNIFORM_FLAT",
+            "facade_band_profile": "NONE",
+            "window_profile": "TALL_NARROW",
+            "entrance_profile": "FLUSH",
+            "balcony_mode": "NONE",
+            "tactical_facade_profile": "BRUTALIST",
+            "massing_profile": "BOX",
+            "ground_floor_tactical_profile": "OPEN_ENTRY",
+            "foundation_profile": "PLAIN",
+            "door_enabled": false,
+            "door_profile": "HINGED",
+            "roof_mode": "GABLE",
+            "roof_prop_profile": "NONE",
+            "stair_window_mode": "NONE",
+            "service_profile": "NONE",
+            "facade_completion": 1.0
+          },
+          "ranges": {
+            "width": [
+              20.0,
+              22.8
+            ],
+            "depth": [
+              13.4,
+              16.0
+            ],
+            "floor_count": [
+              1,
+              1
+            ],
+            "door_offset_x": [
+              0.0,
+              0.0
+            ],
+            "facade_family": {
+              "options": [
+                {
+                  "value": "PLASTER_COOL",
+                  "weight": 2.2
+                },
+                {
+                  "value": "CONCRETE_FLAT",
+                  "weight": 1.0
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.26,
+              0.34
+            ],
+            "wide_window_ratio": [
+              0.0,
+              0.0
+            ],
+            "facade_ac_ratio": [
+              0.0,
+              0.01
+            ]
+          }
+        }
+      ],
+      "ranges": {
+        "width": [
+          18.0,
+          22.0
+        ],
+        "depth": [
+          12.5,
+          15.5
+        ],
+        "door_offset_x": [
+          0.0,
+          0.0
+        ],
+        "facade_family": {
+          "options": [
+            {
+              "value": "CONCRETE_FLAT",
+              "weight": 2.0
+            },
+            {
+              "value": "PLASTER_COOL",
+              "weight": 1.1
+            },
+            {
+              "value": "PLASTER_WARM",
+              "weight": 0.7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "under_construction",
+      "label": "Under Construction",
+      "description": "Manual-only unfinished shell preset for traversal testing with gradient facade completion; doorless, flush-based, and open-shell-first",
+      "defaults": {
+        "width": 11.0,
+        "depth": 8.6,
+        "floor_count": 5,
+        "floor_height": 3.1,
+        "wall_thickness": 0.22,
+        "slab_thickness": 0.16,
+        "parapet_height": 0.4,
+        "stair_core_enabled": true,
+        "stair_placement": "BACK_RIGHT",
+        "core_width": 2.2,
+        "core_depth": 4.0,
+        "stair_width": 1.8,
+        "step_count": 17,
+        "railing_enabled": true,
+        "door_enabled": false,
+        "door_width": 1.2,
+        "door_height": 2.2,
+        "door_thickness": 0.06,
+        "door_offset_x": -2.0,
+        "door_hinge": "LEFT",
+        "facade_family": "GREY_BRICK",
+        "facade_mode": "UNIFORM_BRICK",
+        "facade_band_profile": "BRICK_REVEAL",
+        "window_profile": "RESIDENTIAL",
+        "entrance_profile": "FLUSH",
+        "balcony_mode": "NONE",
+        "open_window_ratio": 0.34,
+        "combat_open_window_min": 2,
+        "wide_window_ratio": 0.18,
+        "tactical_facade_profile": "TENEMENT",
+        "massing_profile": "BOX",
+        "ground_floor_tactical_profile": "DEFENSIVE_BASE",
+        "foundation_profile": "PLAIN",
+        "facade_ac_ratio": 0.0,
+        "door_profile": "HINGED",
+        "roof_mode": "FLAT",
+        "roof_prop_profile": "NONE",
+        "stair_window_mode": "EXPOSED",
+        "service_profile": "STANDARD",
+        "facade_completion": 0.5,
+        "unit_mode": "METERS",
+        "export_profile": "EDITABLE_ONLY"
+      },
+      "archetypes": [
+        {
+          "weight": 1.3,
+          "defaults": {
+            "facade_mode": "UNIFORM_BRICK",
+            "facade_band_profile": "BRICK_REVEAL",
+            "window_profile": "RESIDENTIAL",
+            "entrance_profile": "FLUSH",
+            "balcony_mode": "NONE",
+            "tactical_facade_profile": "TENEMENT",
+            "massing_profile": "BOX",
+            "ground_floor_tactical_profile": "DEFENSIVE_BASE",
+            "foundation_profile": "PLAIN",
+            "door_profile": "HINGED",
+            "roof_mode": "FLAT",
+            "roof_prop_profile": "NONE",
+            "stair_window_mode": "EXPOSED",
+            "service_profile": "NONE",
+            "facade_completion": 0.62
+          },
+          "ranges": {
+            "width": [
+              9.8,
+              12.6
+            ],
+            "depth": [
+              7.8,
+              9.6
+            ],
+            "floor_count": [
+              3,
+              4
+            ],
+            "door_offset_x": [
+              -2.4,
+              2.4
+            ],
+            "facade_completion": [
+              0.48,
+              0.76
+            ],
+            "facade_family": {
+              "options": [
+                {
+                  "value": "GREY_BRICK",
+                  "weight": 1.9
+                },
+                {
+                  "value": "BROWN_BRICK",
+                  "weight": 1.2
+                },
+                {
+                  "value": "DARK_BRICK",
+                  "weight": 0.6
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.28,
+              0.38
+            ],
+            "wide_window_ratio": [
+              0.12,
+              0.18
+            ]
+          }
+        },
+        {
+          "weight": 1.0,
+          "defaults": {
+            "facade_family": "CONCRETE_FLAT",
+            "facade_mode": "UNIFORM_FLAT",
+            "facade_band_profile": "CONCRETE_BAND",
+            "window_profile": "TALL_NARROW",
+            "entrance_profile": "FLUSH",
+            "balcony_mode": "NONE",
+            "tactical_facade_profile": "PANEL",
+            "massing_profile": "BOX",
+            "ground_floor_tactical_profile": "DEFENSIVE_BASE",
+            "foundation_profile": "HEAVY_BASE",
+            "door_profile": "HINGED",
+            "roof_mode": "FLAT",
+            "roof_prop_profile": "NONE",
+            "stair_window_mode": "EXPOSED",
+            "service_profile": "STANDARD",
+            "facade_completion": 0.42
+          },
+          "ranges": {
+            "width": [
+              11.2,
+              14.6
+            ],
+            "depth": [
+              8.6,
+              11.0
+            ],
+            "floor_count": [
+              5,
+              7
+            ],
+            "door_offset_x": [
+              -2.8,
+              2.8
+            ],
+            "facade_completion": [
+              0.32,
+              0.54
+            ],
+            "facade_family": {
+              "options": [
+                {
+                  "value": "CONCRETE_FLAT",
+                  "weight": 2.4
+                },
+                {
+                  "value": "PLASTER_COOL",
+                  "weight": 0.5
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.22,
+              0.32
+            ],
+            "wide_window_ratio": [
+              0.08,
+              0.14
+            ]
+          }
+        },
+        {
+          "weight": 0.85,
+          "defaults": {
+            "floor_height": 3.6,
+            "door_width": 1.5,
+            "door_height": 2.4,
+            "door_offset_x": -3.0,
+            "facade_mode": "UNIFORM_BRICK",
+            "facade_band_profile": "BRICK_REVEAL",
+            "window_profile": "MULTI_PANE",
+            "entrance_profile": "FLUSH",
+            "balcony_mode": "NONE",
+            "tactical_facade_profile": "BRUTALIST",
+            "massing_profile": "BASE_HEAVY",
+            "ground_floor_tactical_profile": "OPEN_ENTRY",
+            "foundation_profile": "EXPOSED_BRICK_BASE",
+            "door_profile": "ROLLER",
+            "roof_mode": "FLAT",
+            "roof_prop_profile": "NONE",
+            "stair_window_mode": "EXPOSED",
+            "service_profile": "HEAVY",
+            "facade_completion": 0.34
+          },
+          "ranges": {
+            "width": [
+              13.8,
+              18.0
+            ],
+            "depth": [
+              10.0,
+              13.2
+            ],
+            "floor_count": [
+              2,
+              3
+            ],
+            "door_offset_x": [
+              -3.8,
+              3.8
+            ],
+            "facade_completion": [
+              0.24,
+              0.46
+            ],
+            "facade_family": {
+              "options": [
+                {
+                  "value": "GREY_BRICK",
+                  "weight": 1.9
+                },
+                {
+                  "value": "BROWN_BRICK",
+                  "weight": 1.1
+                },
+                {
+                  "value": "DARK_BRICK",
+                  "weight": 0.7
+                }
+              ]
+            },
+            "open_window_ratio": [
+              0.18,
+              0.28
+            ],
+            "wide_window_ratio": [
+              0.1,
+              0.16
+            ]
+          }
+        }
+      ],
+      "ranges": {
+        "width": [
+          9.8,
+          18.0
+        ],
+        "depth": [
+          7.8,
+          13.2
+        ],
+        "floor_count": [
+          2,
+          7
+        ],
+        "door_offset_x": [
+          -3.8,
+          3.8
+        ],
+        "facade_completion": [
+          0.24,
+          0.76
+        ],
+        "facade_family": {
+          "options": [
+            {
+              "value": "GREY_BRICK",
+              "weight": 2.0
+            },
+            {
+              "value": "BROWN_BRICK",
+              "weight": 1.1
+            },
+            {
+              "value": "DARK_BRICK",
+              "weight": 0.7
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

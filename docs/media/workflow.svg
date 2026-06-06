@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">LuArch workflow</title>
+  <desc id="desc">Generate, edit, validate, and export workflow diagram.</desc>
+  <rect width="900" height="520" fill="#20242a"/>
+  <text x="56" y="78" fill="#f3efe7" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Workflow</text>
+  <g font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">
+    <g transform="translate(70 150)">
+      <rect width="160" height="110" rx="16" fill="#46515c"/><text x="42" y="62" fill="#fff">Preset</text>
+    </g>
+    <g transform="translate(290 150)">
+      <rect width="160" height="110" rx="16" fill="#6d765f"/><text x="29" y="62" fill="#fff">Generate</text>
+    </g>
+    <g transform="translate(510 150)">
+      <rect width="160" height="110" rx="16" fill="#8b6b4a"/><text x="55" y="62" fill="#fff">Edit</text>
+    </g>
+    <g transform="translate(730 150)">
+      <rect width="160" height="110" rx="16" fill="#6b515c"/><text x="34" y="62" fill="#fff">Validate</text>
+    </g>
+    <g transform="translate(290 335)">
+      <rect width="380" height="90" rx="16" fill="#39424a"/><text x="112" y="54" fill="#fff">FBX + RBXMX Export</text>
+    </g>
+  </g>
+  <g stroke="#c5cbd1" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M230 205h60"/><path d="M450 205h60"/><path d="M670 205h60"/><path d="M810 260c0 105-120 130-210 130"/>
+  </g>
+</svg>
+

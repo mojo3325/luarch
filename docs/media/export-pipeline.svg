@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520" role="img" aria-labelledby="title desc">
+  <title id="title">Export pipeline</title>
+  <desc id="desc">Blender generation exports render FBX and RBXMX sidecar for optional Studio processing.</desc>
+  <rect width="1100" height="520" fill="#20242a"/>
+  <text x="55" y="78" fill="#f3efe7" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Export Pipeline</text>
+  <g font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700">
+    <rect x="70" y="160" width="210" height="150" rx="18" fill="#46515c"/>
+    <text x="113" y="230" fill="#fff">Blender Addon</text>
+    <text x="115" y="260" fill="#cfd6dc" font-size="16">geometry + metadata</text>
+    <rect x="420" y="115" width="230" height="105" rx="18" fill="#6d765f"/>
+    <text x="487" y="178" fill="#fff">FBX Render</text>
+    <rect x="420" y="280" width="230" height="105" rx="18" fill="#8b6b4a"/>
+    <text x="476" y="343" fill="#fff">RBXMX Sidecar</text>
+    <rect x="790" y="190" width="230" height="130" rx="18" fill="#6b515c"/>
+    <text x="830" y="250" fill="#fff">Optional Studio</text>
+    <text x="854" y="280" fill="#cfd6dc" font-size="16">post-processor</text>
+  </g>
+  <g stroke="#c5cbd1" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M280 215c60-30 85-45 140-55"/>
+    <path d="M280 255c60 30 85 45 140 55"/>
+    <path d="M650 170c88 0 112 25 140 70"/>
+    <path d="M650 335c88 0 112-25 140-70"/>
+  </g>
+</svg>
+

@@ -1,0 +1,53 @@
+name: Bug Report
+description: Report incorrect behavior in the Blender addon, validation, or export pipeline.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a LuArch issue. Please include enough detail to reproduce the problem.
+  - type: input
+    id: blender_version
+    attributes:
+      label: Blender Version
+      placeholder: "4.5.3 LTS"
+    validations:
+      required: true
+  - type: input
+    id: luarch_version
+    attributes:
+      label: LuArch Version
+      placeholder: "v0.2.0"
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Choose preset ...
+        2. Click ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or Screenshots
+      description: Paste Blender console output, validation messages, or screenshots if available.
+    validations:
+      required: false

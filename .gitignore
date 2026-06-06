@@ -1,0 +1,30 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Blender local backups and temporary files
+*.blend1
+*.blend2
+*.blend@
+*.blend~
+
+# Local/generated exports
+.exports/
+dist/
+build/
+*.fbx
+*.rbxmx
+*.fbm/
+
+# Local agent/tooling artifacts
+.orch/
+.claude-out/
+.codex/
+
+# OS/editor noise
+.vscode/
+.idea/
+*.swp
+*.swo
+
