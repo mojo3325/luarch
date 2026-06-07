@@ -50,7 +50,7 @@ Recommended GitHub labels:
 
 ## Not Planned for the First Public Release
 
-- Publishing any private game project.
+- Publishing unrelated private products.
 - Adding commercial licensing code.
 - Rewriting the generator architecture.
 - Claiming usage numbers, customers, or downloads that do not exist.
