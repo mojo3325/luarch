@@ -12,6 +12,10 @@
 
 ![LuArch procedural building preview](docs/media/hero-wide.png)
 
+## Blender Interface
+
+![LuArch Blender sidebar interface](docs/media/interface.png)
+
 ## Interior Gallery
 
 ![LuArch interior cutaway gallery](docs/media/gallery-grid-3x3.png)
@@ -22,9 +26,11 @@ The project includes the Blender addon, randomized preset generation, selected-b
 
 ## What It Does
 
+- Replaces slow manual building blockout with preset-driven procedural generation.
 - Generates residential, rowhouse, apartment, warehouse, hangar, market, depot, and industrial-style low-poly buildings.
 - Uses seed-backed randomization, so variants can be reproduced.
 - Keeps generated buildings editable from the Blender sidebar.
+- Supports interior inspection workflows for stairs, rooms, doors, and roof access.
 - Builds larger district/block layouts for fast urban layout exploration.
 - Validates selected buildings before export.
 - Exports render FBX plus an RBXMX sidecar for Roblox-side setup.
@@ -78,6 +84,16 @@ The generated release zip is written to `dist/`.
 This is an early open-source release of a production-oriented authoring tool. The current focus is documentation, installability, preset quality, validation coverage, and export reliability.
 
 Roadmap: [`docs/roadmap.md`](docs/roadmap.md)
+
+## Related Tools
+
+LuArch is part of a small open-source Blender/game-dev tool collection:
+
+- [Paxel](https://github.com/mojo3325/paxel) - palette-first low-poly texturing and compact atlas cleanup.
+- [Rendex](https://github.com/mojo3325/rendex) - eight-view orthographic render sheets for Blender assets.
+- [Gridex](https://github.com/mojo3325/gridex) - smart grid alignment for asset presentation and scene cleanup.
+- [Pixel Head Toolkit](https://github.com/mojo3325/pixel-head-toolkit) - pixel face cleanup, hair-view generation, and head atlas assembly.
+- [Game Dev Tools](https://github.com/mojo3325/game-dev-tools) - collection hub for the related tools.
 
 ## License
 
